@@ -1,0 +1,34 @@
+<div *ngIf="taille=='grande taille'" class="weather-iconcontainer " [ngSwitch]="condition">
+  <div *ngSwitchCase="'sun'">
+    <i class="fas fa-10x fa-sun"></i>
+  </div>
+  <div *ngSwitchCase="'rain'">
+    <i class="fas fa-10x fa-cloud-showers-heavy"></i>
+  </div>
+  <div *ngSwitchCase="'clouds'">
+    <i class="fas fa-10x fa-cloud"></i>
+  </div>
+  <div *ngSwitchCase="'storm'">
+    <i class="fas fa-10x fa-bolt"></i>
+  </div>
+  <div *ngSwitchCase="'snow'">
+    <i class="fas fa-10x fa-snowflake"></i>
+  </div>
+</div>
+<div *ngIf="taille=='petite taille'" class="weather-iconcontainer " [ngSwitch]="condition">
+  <div *ngSwitchCase="'sun'">
+    <i class="fas fa-5x fa-sun"></i>
+  </div>
+  <div *ngSwitchCase="'rain'">
+    <i class="fas fa-5x fa-cloud-showers-heavy"></i>
+  </div>
+  <div *ngSwitchCase="'clouds'">
+    <i class="fas fa-5x fa-cloud"></i>
+  </div>
+  <div *ngSwitchCase="'storm'">
+    <i class="fas fa-5x fa-bolt"></i>
+  </div>
+  <div *ngSwitchCase="'snow'">
+    <i class="fas fa-5x fa-snowflake"></i>
+  </div>
+</div>
